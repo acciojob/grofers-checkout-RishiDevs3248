@@ -12,11 +12,11 @@ const getSum = () => {
 	let row = document.createElement('tr')
 	let cell1 = document.createElement('td')
 	let cell2 = document.createElement('td')
-
+	row.setAttribute('id','ans')
 	cell1.textContent = "total"
-	cell2.textContent = total
+	cell2.textContent = `total ${total}`
 
-	row.appendChild(cell1)
+	// row.appendChild(cell1)
 	row.appendChild(cell2)
 	table[0].appendChild(row)
   
